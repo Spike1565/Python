@@ -1,0 +1,9 @@
+{
+    "namespaces": [
+        "default",
+        "kube-node-lease",
+        "kube-public",
+        "kube-system",
+        "gitlab-runner" 
+    ]
+}

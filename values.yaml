@@ -1,0 +1,23 @@
+runners:
+  runners:
+    image: gitlab/gitlab-runner:latest
+    privileged: true
+    resources:
+      limits:
+        cpu: 2
+        memory: 2Gi
+      requests:
+        cpu: 1
+        memory: 1Gi
+
+  rbac:
+    create: true
+
+  env:
+    BUILD_ENV: production
+    BUILD_TIMEOUT: 7200
+
+  gitlabUrl: https://gitlab.com/
+  registrationToken: GR1348941DNr3r9UF5yn4FCny9Vuf
+  runnerToken: my-runner-token
+  runnersNamespace: gitlab-runner
